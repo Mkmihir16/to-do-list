@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(to right,red,blue) ;
+    color: transparent;
+    -webkit-background-clip:text ;
+    text-shadow:0 0 30px rgb(255, 0, 0);
+    animation: anime 1s infinite alternate;
+}
+@keyframes anime {
+    100%{
+        text-shadow:0 0 60px rgb(34, 0, 255) 
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns:250px 200px 100px;
+    column-gap:15px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.output{
+    display: grid;
+    grid-template-columns:250px 200px 100px;
+    column-gap:15px;
+    font-weight: 500;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.forms,.calen{
+    padding:5px;
+    font: 25px;
+    font-weight: 600;
+    border:2px solid black ;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+button{
+    font: 25px;
+    font-weight: 600;
+    border:2px solid black ;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: burlywood;
+    padding:5px;
+    font: 25px;
+}
+.btn:hover{
+    background-color: rgb(132, 96, 49);
+}
