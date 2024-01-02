@@ -1,4 +1,4 @@
-let array=[];
+let array=JSON.parse(localStorage.getItem('save')) || [];
     let i;
     let val;
 
@@ -23,4 +23,5 @@ function printdata()
     }
     console.log(html)
     selector.innerHTML=html;
+    localStorage.setItem('save',JSON.stringify(array));
 }
